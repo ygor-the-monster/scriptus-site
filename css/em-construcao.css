@@ -10,6 +10,35 @@ video {
     left: 0;
     right: 0;
     bottom: 0;
+
+    filter: contrast(1.15) brightness(1.1);
+}
+
+.light {
+    position: absolute;
+    width: 50vmin;
+    height: 50vmin;
+
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 9999px;
+
+    opacity: 0.15;
+    mix-blend-mode: lighten;
+    filter: blur(5vmin);
+}
+
+.light:nth-of-type(1) {
+    background-color: #F89D34;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.light:nth-of-type(2) {
+    background-color: #EF594E;
+    margin-left: -2%;
+    margin-top: -5%;
 }
 
 main {
