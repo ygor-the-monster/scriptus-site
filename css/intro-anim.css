@@ -1,0 +1,43 @@
+@keyframes intro-light-scale {
+    0% { scale: 0; }
+    100% { scale: 1;}
+}
+
+@keyframes intro-light-top {
+    0% { translate: -10vw -20vh; }
+    50% { translate: -20vw 5vh; }
+    85% { translate: 5vw 0vh; }
+    100% { }
+}
+
+@keyframes intro-light-bottom {
+    0% { translate: 30vw 20vh; }
+    50% { translate: -20vw -25vh; }
+    65% { translate: -20vw -30vh; }
+    100% { }
+}
+
+.light:nth-of-type(1) {
+    animation: intro-light-scale 550ms ease-in-out 0ms 1, intro-light-top 850ms ease-in 0ms 1;
+}
+
+.light:nth-of-type(2) {
+    animation: intro-light-scale 550ms ease-in-out 0ms 1, intro-light-bottom 850ms ease-in 0ms 1;
+}
+
+@keyframes intro-logo {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+h1 img {
+    animation: intro-logo 900ms ease-in-out 200ms 1 backwards;
+}
+
+h2 {
+    animation: intro-logo 900ms ease-in-out 400ms 1 backwards;
+}
+
+nav {
+    animation: intro-logo 900ms ease-in-out 600ms 1 backwards;
+}

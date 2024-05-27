@@ -16,8 +16,8 @@ video {
 
 .light {
     position: absolute;
-    width: 50vmin;
-    height: 50vmin;
+    width: 50vmax;
+    height: 50vmax;
 
     top: 50%;
     left: 50%;
